@@ -1,0 +1,558 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		86F5324920059E6A00C43DE4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F5324820059E6A00C43DE4 /* AppDelegate.swift */; };
+		86F5324B20059E6A00C43DE4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F5324A20059E6A00C43DE4 /* ViewController.swift */; };
+		86F5324E20059E6A00C43DE4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86F5324C20059E6A00C43DE4 /* Main.storyboard */; };
+		86F5325020059E6A00C43DE4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 86F5324F20059E6A00C43DE4 /* Assets.xcassets */; };
+		86F5325320059E6A00C43DE4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 86F5325120059E6A00C43DE4 /* LaunchScreen.storyboard */; };
+		86F5325E20059E6A00C43DE4 /* PhotoBrowserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F5325D20059E6A00C43DE4 /* PhotoBrowserTests.swift */; };
+		86F5326A2005A45700C43DE4 /* DefaultMecroSetting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F532692005A45700C43DE4 /* DefaultMecroSetting.swift */; };
+		86F5326C2005A89500C43DE4 /* ToolsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F5326B2005A89500C43DE4 /* ToolsView.swift */; };
+		86F5326E2005B66300C43DE4 /* TapImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F5326D2005B66300C43DE4 /* TapImageView.swift */; };
+		86F532702005B80D00C43DE4 /* ZoomScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F5326F2005B80D00C43DE4 /* ZoomScrollView.swift */; };
+		86F53272200603E500C43DE4 /* PhotoBrowserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F53271200603E500C43DE4 /* PhotoBrowserView.swift */; };
+		86F5327420075DBA00C43DE4 /* PhotoBrowserManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86F5327320075DBA00C43DE4 /* PhotoBrowserManager.swift */; };
+		F89E3058210B4DB166DA4F53 /* Pods_PhotoBrowser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A0A8832D225ABC605A552404 /* Pods_PhotoBrowser.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		86F5325A20059E6A00C43DE4 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 86F5323D20059E6A00C43DE4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 86F5324420059E6A00C43DE4;
+			remoteInfo = PhotoBrowser;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4D8E5DEC4002D03A8D308EBD /* Pods-PhotoBrowser.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoBrowser.release.xcconfig"; path = "Pods/Target Support Files/Pods-PhotoBrowser/Pods-PhotoBrowser.release.xcconfig"; sourceTree = "<group>"; };
+		79E8BCFC31D3F27A01D431A7 /* Pods-PhotoBrowser.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoBrowser.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PhotoBrowser/Pods-PhotoBrowser.debug.xcconfig"; sourceTree = "<group>"; };
+		86F5324520059E6A00C43DE4 /* PhotoBrowser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoBrowser.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		86F5324820059E6A00C43DE4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		86F5324A20059E6A00C43DE4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		86F5324D20059E6A00C43DE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		86F5324F20059E6A00C43DE4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		86F5325220059E6A00C43DE4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		86F5325420059E6A00C43DE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86F5325920059E6A00C43DE4 /* PhotoBrowserTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoBrowserTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		86F5325D20059E6A00C43DE4 /* PhotoBrowserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoBrowserTests.swift; sourceTree = "<group>"; };
+		86F5325F20059E6A00C43DE4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		86F532692005A45700C43DE4 /* DefaultMecroSetting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultMecroSetting.swift; sourceTree = "<group>"; };
+		86F5326B2005A89500C43DE4 /* ToolsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToolsView.swift; sourceTree = "<group>"; };
+		86F5326D2005B66300C43DE4 /* TapImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TapImageView.swift; sourceTree = "<group>"; };
+		86F5326F2005B80D00C43DE4 /* ZoomScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZoomScrollView.swift; sourceTree = "<group>"; };
+		86F53271200603E500C43DE4 /* PhotoBrowserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoBrowserView.swift; sourceTree = "<group>"; };
+		86F5327320075DBA00C43DE4 /* PhotoBrowserManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoBrowserManager.swift; sourceTree = "<group>"; };
+		A0A8832D225ABC605A552404 /* Pods_PhotoBrowser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhotoBrowser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		86F5324220059E6A00C43DE4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F89E3058210B4DB166DA4F53 /* Pods_PhotoBrowser.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86F5325620059E6A00C43DE4 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7B94D7B15FC17488AD0E5436 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				79E8BCFC31D3F27A01D431A7 /* Pods-PhotoBrowser.debug.xcconfig */,
+				4D8E5DEC4002D03A8D308EBD /* Pods-PhotoBrowser.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		86F5323C20059E6A00C43DE4 = {
+			isa = PBXGroup;
+			children = (
+				86F5324720059E6A00C43DE4 /* PhotoBrowser */,
+				86F5325C20059E6A00C43DE4 /* PhotoBrowserTests */,
+				86F5324620059E6A00C43DE4 /* Products */,
+				7B94D7B15FC17488AD0E5436 /* Pods */,
+				E536AD776AC43298D02EE2EA /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		86F5324620059E6A00C43DE4 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				86F5324520059E6A00C43DE4 /* PhotoBrowser.app */,
+				86F5325920059E6A00C43DE4 /* PhotoBrowserTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		86F5324720059E6A00C43DE4 /* PhotoBrowser */ = {
+			isa = PBXGroup;
+			children = (
+				86F532682005A3CB00C43DE4 /* source */,
+				86F5324820059E6A00C43DE4 /* AppDelegate.swift */,
+				86F5324A20059E6A00C43DE4 /* ViewController.swift */,
+				86F5324C20059E6A00C43DE4 /* Main.storyboard */,
+				86F5324F20059E6A00C43DE4 /* Assets.xcassets */,
+				86F5325120059E6A00C43DE4 /* LaunchScreen.storyboard */,
+				86F5325420059E6A00C43DE4 /* Info.plist */,
+			);
+			path = PhotoBrowser;
+			sourceTree = "<group>";
+		};
+		86F5325C20059E6A00C43DE4 /* PhotoBrowserTests */ = {
+			isa = PBXGroup;
+			children = (
+				86F5325D20059E6A00C43DE4 /* PhotoBrowserTests.swift */,
+				86F5325F20059E6A00C43DE4 /* Info.plist */,
+			);
+			path = PhotoBrowserTests;
+			sourceTree = "<group>";
+		};
+		86F532682005A3CB00C43DE4 /* source */ = {
+			isa = PBXGroup;
+			children = (
+				86F532692005A45700C43DE4 /* DefaultMecroSetting.swift */,
+				86F5326B2005A89500C43DE4 /* ToolsView.swift */,
+				86F5326D2005B66300C43DE4 /* TapImageView.swift */,
+				86F5326F2005B80D00C43DE4 /* ZoomScrollView.swift */,
+				86F53271200603E500C43DE4 /* PhotoBrowserView.swift */,
+				86F5327320075DBA00C43DE4 /* PhotoBrowserManager.swift */,
+			);
+			path = source;
+			sourceTree = "<group>";
+		};
+		E536AD776AC43298D02EE2EA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A0A8832D225ABC605A552404 /* Pods_PhotoBrowser.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		86F5324420059E6A00C43DE4 /* PhotoBrowser */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 86F5326220059E6A00C43DE4 /* Build configuration list for PBXNativeTarget "PhotoBrowser" */;
+			buildPhases = (
+				0F136DA582744E8BD6DE2740 /* [CP] Check Pods Manifest.lock */,
+				86F5324120059E6A00C43DE4 /* Sources */,
+				86F5324220059E6A00C43DE4 /* Frameworks */,
+				86F5324320059E6A00C43DE4 /* Resources */,
+				373AED35531DE09A0FA39B47 /* [CP] Embed Pods Frameworks */,
+				6D97E67C7DD361A30A6993E0 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PhotoBrowser;
+			productName = PhotoBrowser;
+			productReference = 86F5324520059E6A00C43DE4 /* PhotoBrowser.app */;
+			productType = "com.apple.product-type.application";
+		};
+		86F5325820059E6A00C43DE4 /* PhotoBrowserTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 86F5326520059E6A00C43DE4 /* Build configuration list for PBXNativeTarget "PhotoBrowserTests" */;
+			buildPhases = (
+				86F5325520059E6A00C43DE4 /* Sources */,
+				86F5325620059E6A00C43DE4 /* Frameworks */,
+				86F5325720059E6A00C43DE4 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				86F5325B20059E6A00C43DE4 /* PBXTargetDependency */,
+			);
+			name = PhotoBrowserTests;
+			productName = PhotoBrowserTests;
+			productReference = 86F5325920059E6A00C43DE4 /* PhotoBrowserTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		86F5323D20059E6A00C43DE4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0920;
+				LastUpgradeCheck = 0920;
+				ORGANIZATIONNAME = Zonyet;
+				TargetAttributes = {
+					86F5324420059E6A00C43DE4 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+					};
+					86F5325820059E6A00C43DE4 = {
+						CreatedOnToolsVersion = 9.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 86F5324420059E6A00C43DE4;
+					};
+				};
+			};
+			buildConfigurationList = 86F5324020059E6A00C43DE4 /* Build configuration list for PBXProject "PhotoBrowser" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 86F5323C20059E6A00C43DE4;
+			productRefGroup = 86F5324620059E6A00C43DE4 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				86F5324420059E6A00C43DE4 /* PhotoBrowser */,
+				86F5325820059E6A00C43DE4 /* PhotoBrowserTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		86F5324320059E6A00C43DE4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86F5325320059E6A00C43DE4 /* LaunchScreen.storyboard in Resources */,
+				86F5325020059E6A00C43DE4 /* Assets.xcassets in Resources */,
+				86F5324E20059E6A00C43DE4 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86F5325720059E6A00C43DE4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0F136DA582744E8BD6DE2740 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		373AED35531DE09A0FA39B47 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PhotoBrowser/Pods-PhotoBrowser-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6D97E67C7DD361A30A6993E0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PhotoBrowser/Pods-PhotoBrowser-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		86F5324120059E6A00C43DE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86F5324B20059E6A00C43DE4 /* ViewController.swift in Sources */,
+				86F53272200603E500C43DE4 /* PhotoBrowserView.swift in Sources */,
+				86F5324920059E6A00C43DE4 /* AppDelegate.swift in Sources */,
+				86F532702005B80D00C43DE4 /* ZoomScrollView.swift in Sources */,
+				86F5326C2005A89500C43DE4 /* ToolsView.swift in Sources */,
+				86F5327420075DBA00C43DE4 /* PhotoBrowserManager.swift in Sources */,
+				86F5326E2005B66300C43DE4 /* TapImageView.swift in Sources */,
+				86F5326A2005A45700C43DE4 /* DefaultMecroSetting.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		86F5325520059E6A00C43DE4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				86F5325E20059E6A00C43DE4 /* PhotoBrowserTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		86F5325B20059E6A00C43DE4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 86F5324420059E6A00C43DE4 /* PhotoBrowser */;
+			targetProxy = 86F5325A20059E6A00C43DE4 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		86F5324C20059E6A00C43DE4 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				86F5324D20059E6A00C43DE4 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		86F5325120059E6A00C43DE4 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				86F5325220059E6A00C43DE4 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		86F5326020059E6A00C43DE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		86F5326120059E6A00C43DE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		86F5326320059E6A00C43DE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 79E8BCFC31D3F27A01D431A7 /* Pods-PhotoBrowser.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4E8GUV9FSQ;
+				INFOPLIST_FILE = PhotoBrowser/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tl.PhotoBrowser;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		86F5326420059E6A00C43DE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D8E5DEC4002D03A8D308EBD /* Pods-PhotoBrowser.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4E8GUV9FSQ;
+				INFOPLIST_FILE = PhotoBrowser/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tl.PhotoBrowser;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		86F5326620059E6A00C43DE4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PhotoBrowserTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tl.PhotoBrowserTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PhotoBrowser.app/PhotoBrowser";
+			};
+			name = Debug;
+		};
+		86F5326720059E6A00C43DE4 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PhotoBrowserTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tl.PhotoBrowserTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PhotoBrowser.app/PhotoBrowser";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		86F5324020059E6A00C43DE4 /* Build configuration list for PBXProject "PhotoBrowser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86F5326020059E6A00C43DE4 /* Debug */,
+				86F5326120059E6A00C43DE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		86F5326220059E6A00C43DE4 /* Build configuration list for PBXNativeTarget "PhotoBrowser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86F5326320059E6A00C43DE4 /* Debug */,
+				86F5326420059E6A00C43DE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		86F5326520059E6A00C43DE4 /* Build configuration list for PBXNativeTarget "PhotoBrowserTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				86F5326620059E6A00C43DE4 /* Debug */,
+				86F5326720059E6A00C43DE4 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 86F5323D20059E6A00C43DE4 /* Project object */;
+}
